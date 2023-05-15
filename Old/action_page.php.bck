@@ -1,0 +1,33 @@
+<?php
+    if (isset($_POST['submit'])) {
+        $fullName = $_POST['fullname'];
+        $from = $_POST['email'];
+        $tel = '';
+        if (isset($_POST['phone'])) {
+            $tel = $_POST['phone'];
+        }
+        
+        $messageBody = $_POST['message'];
+        $messageBody .= '<br/>Mon téléphone est : ' . $tel;
+
+        $to = 'lethanhvu44@gmail.com';
+        $subject = $_POST['subject'];
+        $message = $messageBody;
+        $headers  = 'MIME-Version: 1.0' . "\n"; // Version MIME
+        $headers .= 'Content-type: text/html; charset=ISO-8859-1'."\n"; // l'en-tete Content-type pour le format HTML
+        $headers .= 'Reply-To: '.$to."\n"; // Mail de reponse
+        $headers .= 'From: ' .$fullName. '<' .$from. '>'."\n"; // Expediteur
+        $headers .= 'Delivered-to: '.$to."\n"; // Destinataire
+        $cc = 'contact@kaiiros.fr';
+        $headers .= 'Cc: '.$cc."\n"; // Copie Cc
+        $bcc = 'admimetis@gmail.com';
+        $headers .= 'Bcc: '.$bcc."\n\n"; // Copie cachée Bcc 
+
+        if ( mail($to, $subject, $message, $headers) ) {
+            header('location: contact.html');
+            echo '<script > alert("Votre message est envoyé"); </script>';
+        } else{
+            echo 'Oop! Votre message n\'a pas envoyé...';
+        }
+    }
+?>

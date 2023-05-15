@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-TRPGWBG');</script>
+    <!-- End Google Tag Manager -->
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGL6HMJ16S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-214284825-1');
+  </script>
+  <!-- END Global site tag (gtag.js) - Google Analytics -->
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+	background-image: url('images/bg-body.jpeg');
+/* Background image is centered vertically and horizontally at all times */
+background-position: center center;
+
+/* Background image doesn’t tile */
+background-repeat: no-repeat;
+
+/* Background image is fixed in the viewport so that it doesn’t move when
+the content’s height is greater than the image’s height */
+background-attachment: fixed;
+
+/* This is what makes the background image rescale based
+on the container’s size */
+background-size: 100% 100%;
+
+/* Set a background color that will be displayed
+while the background image is loading */
+background-color: white; //#464646;
+}
+.dkfixed { position: fixed; background-color: white; width: 100%;}
+.nav-fixed { position: fixed }
+.nav-colored { background-color:white; width:100%; }
+.nav-transparent { background-color:white;}
+
+.topnav {
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  overflow: hidden;
+  background-color: transparent ; //#333;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black; //#ff4d00;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black; //#5C2D91;
+  border-radius: 5px;
+}
+
+.topnav a.active {
+  background-color: transparent; //#04AA6D;
+  color: black; //#5C2D91;
+  border-radius: 5px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/* Style the header */
+header {
+  background-color: transparent; //#666;
+  padding: 10px;
+  text-align: left;
+  font-size: 12px;
+  color: #000;
+}
+
+/* Style the footer */
+footer {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  color: #4F8FFF;
+  border-top:1px solid #ccc;
+  border-bottom:1px solid white;
+  position:fixed;
+  bottom: 0;
+  width:100%;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer { position: fixed; bottom: 0; width: 100%;} 
+  .dkfixed { position: fixed; width:100%; }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+   <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRPGWBG"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<div id="dkfixed" class="dkfixed nav-fixed" >
+<!--header>
+  <!--p style="color: black;" > <span style="text-size:1.5em">TVL-PLATRIER </span> 
+   </br>La confiance tranquille
+  </p>
+</header>
+ <!-- http://0.0.0.0:8080/V1/views/desktop/Templates/Navbar/Tvl-platrier.fr%c4%85/ -->
+  
+ <div class="topnav" id="myTopnav" onclick="window.activeFunction(event)" >
+  <a href="home.html" class="active"> <img style="padding:5px;width:128px; height:64px;"src="IMG-20220325-WA0000.jpg" alt="tvl-platrier.fr logo" /> <!--span style="text-size:1.5em">TVL-PLATRIER </span> </br><sup>La confiance tranquille</sup--></a>
+  <!--a href="home.html" class="active">Accueil</a-->
+  <a href="home.html">Qui sommes-nous ? </a>
+  <!--a href="notre-catalogue.html">Notre catalogue</a-->
+  <a href="contact.html">Nous Contacter</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <!--i class="fa fa-bars"></i-->
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </a>
+</div>
+ 
+</div> 
+  
+<style>
+* {
+  box-sizing: border-box;
+}
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+  height: 100%;
+  padding: 100px 120px 150px 120px;
+  font-family: Arial;
+  background-image: url('images/bg-body.jpeg');
+/* Background image is centered vertically and horizontally at all times */
+background-position: center center;
+
+/* Background image doesn’t tile */
+background-repeat: no-repeat;
+
+/* Background image is fixed in the viewport so that it doesn’t move when
+the content’s height is greater than the image’s height */
+background-attachment: fixed;
+
+/* This is what makes the background image rescale based
+on the container’s size */
+background-size: cover;
+
+/* Set a background color that will be displayed
+while the background image is loading */
+background-color: white; //#464646;
+
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+  background-color: transparent;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: transparent;
+  width:80%;
+  padding: 10px;
+}
+img {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: 0px;
+    padding: 100px 20px 50px 20px;
+    font-family: Arial;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+/* Style inputs, select elements and textareas */
+input[type=text], input[type=number], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the input tel */
+input[type=tel] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: transparent; // #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .main { padding: 50px 0px 150px; }
+}
+
+</style>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+  
+<div class="container">
+  <form action="action_page.php" method="POST" onsubmit="return alert('Nous traiterons votre message le plustôt possible ...');">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Nom</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="fullname" placeholder="Votre nom et prénom..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email" placeholder="Votre e-mail..">
+      </div>
+    </div>
+
+    <!-- div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div-->
+    <div class="row">
+      <div class="col-25">
+        <label for="phone">Votre numéro de téléphone </label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="phone" name="phone" placeholder="Votre numéro du téléphone...">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Objet</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="subject" name="subject" placeholder="ex: rénovation, contruction..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+       <!-- <label for="message">Votre messages </label> --> 
+      </div>
+      <div class="col-75">
+        <textarea id="message" name="message" placeholder="Votre message..." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" name="submit" value="Envoyer">
+    </div>
+    <div class="row" style="text-align:center;">
+      <label for="subject"> <hr> Ou <hr> </label>
+    </div>
+    
+  </form>
+
+<div class="row" style="text-align:center;">
+      <a href="tel:+33768813758" style="font-size: 0.875em; background-color:blue; color: white; text-decoration: none; width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;" > <i class="fa fa-phone"></i> &ensp; APPELEZ NOUS EN CLIQUANT DESSUS</a>
+</div>
+</div>
+ 
+<!-- END MAIN -->
+</div>
+
+  
+<footer style="background-color: #ccc;">
+  <p style="color:blue;"> Created & Designed by <a href="http://www.kaiiros.fr" target="_blank"> Kaiiros.fr  </a> </p>
+</footer>
+
+<script>
+var myNav = document.getElementById('dkfixed');
+window.onscroll = function () { 
+    //"use strict";
+     if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
+        myNav.classList.add("nav-colored");
+        myNav.classList.add("nav-fixed");
+        myNav.classList.remove("nav-transparent");
+    } 
+    else {
+        myNav.classList.add("nav-transparent");
+        myNav.classList.remove("nav-colored");
+    }
+};
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+window.activeFunction = function(event) {
+  // reset all menu items
+  document.querySelectorAll('div a.active').forEach(function(item) {
+  item.classList.remove('active');
+})
+  // mark as active selected menu item
+  event.target.classList.add("active");
+};
+</script>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+html, body { margin: 0px; }
+header { width: 100%; min-height: 5%; }
+.hd-left { margin-top: 2.5%; float: left ; }
+.hd-right { margin-top: 2.5%; float: right; right:0; }
+.multiple-linear-gradient {
+  background: linear-gradient(blue, white, red);
+}

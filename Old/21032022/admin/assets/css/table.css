@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('assets/images/png/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable td.col0, th.col0 {
+  text-align: center;
+  padding: 12px;
+  width: 50px;
+}
+#myTable th {
+    text-align: center;
+    text-transform: uppercase;
+    min-width: 150px;
+    font-size: 2em;
+}
+#myTable td input { text-align: center ; }
+.sortAsc, .sortDesc {
+    font-size: 10px;
+    text-decoration: none;
+    border:1px solid #4CAF50;
+    border-radius: 5%;
+    background-color: #000;
+    color: #fff ;
+}
+
+#myTable { 		width:100%; 		border-collapse:collapse; 	} 
+#myTable td{ 		padding:7px; border:#4e95f4 1px solid; 	} 
+/* provide some minimal visual accomodation for IE8 and below */ 	
+#myTable tr{ 		background: #b8d1f3; 	} 
+/* Define the background color for all the ODD background rows */ 	
+#myTable tr:nth-child(odd){ 		background: #b8d1f3; 	} 
+/* Define the background color for all the EVEN background rows */ 	
+#myTable tr:nth-child(even){ 		background: #dae5f4; 	} 
+  
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
